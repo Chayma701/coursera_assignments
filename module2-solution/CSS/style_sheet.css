@@ -1,7 +1,113 @@
 * {
   box-sizing: border-box;
 }
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.box {
+  border: 3px solid black;
+  background-color: grey;
+  font-family: Helvetica;
+  color: white;
+  position: relative;
+  margin: 10px;
+  padding: 50px 10px 5px 10px;
+   font-family: 'Indie Flower', cursive;
+}
+
+/* Simple Responsive Framework. */
+.container {
+  width: 100%;
+
+  
+}
+
+@media (max-width: 767px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.box.three{
+		flex: 1 1 100%;
+	}
+
+	.box.one {
+		flex: 1 1 200px;
+    	align-items: center;
+    	justify-content: center;
+	}
+
+	.box.two{
+		flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.container{
+		display: flex;
+		flex-direction: row;
+	}
+}
 
 #chicken{
-	background:  pink;
+	background: #ff3366;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 125%;
+	text-align: center;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 70%;
+  	height: 20%;
+}
+#beef{
+	background: #df2020;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 125%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 70%;
+  	height: 20%;
+}
+#suchi{
+	background: #ff9900;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 125%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 70%;
+  	height: 20%;
+}
+
+p{
+	text-align: left;
 }
